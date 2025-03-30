@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "xDfuWAvAAtQDFxncIW/VGgFkh65yfEpghrlPErKLSsY=",
+  "Source": "GroupApp.API",
+  "BasePath": "_content/GroupApp.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

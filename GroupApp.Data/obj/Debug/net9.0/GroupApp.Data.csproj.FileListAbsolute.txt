@@ -1,0 +1,14 @@
+/Users/s4rgin/Desktop/Projects/GroupApp/GroupApp.Data/bin/Debug/net9.0/GroupApp.Data.deps.json
+/Users/s4rgin/Desktop/Projects/GroupApp/GroupApp.Data/bin/Debug/net9.0/GroupApp.Data.runtimeconfig.json
+/Users/s4rgin/Desktop/Projects/GroupApp/GroupApp.Data/bin/Debug/net9.0/GroupApp.Data.dll
+/Users/s4rgin/Desktop/Projects/GroupApp/GroupApp.Data/bin/Debug/net9.0/GroupApp.Data.pdb
+/Users/s4rgin/Desktop/Projects/GroupApp/GroupApp.Data/obj/Debug/net9.0/GroupApp.Data.csproj.AssemblyReference.cache
+/Users/s4rgin/Desktop/Projects/GroupApp/GroupApp.Data/obj/Debug/net9.0/GroupApp.Data.GeneratedMSBuildEditorConfig.editorconfig
+/Users/s4rgin/Desktop/Projects/GroupApp/GroupApp.Data/obj/Debug/net9.0/GroupApp.Data.AssemblyInfoInputs.cache
+/Users/s4rgin/Desktop/Projects/GroupApp/GroupApp.Data/obj/Debug/net9.0/GroupApp.Data.AssemblyInfo.cs
+/Users/s4rgin/Desktop/Projects/GroupApp/GroupApp.Data/obj/Debug/net9.0/GroupApp.Data.csproj.CoreCompileInputs.cache
+/Users/s4rgin/Desktop/Projects/GroupApp/GroupApp.Data/obj/Debug/net9.0/GroupApp.Data.dll
+/Users/s4rgin/Desktop/Projects/GroupApp/GroupApp.Data/obj/Debug/net9.0/refint/GroupApp.Data.dll
+/Users/s4rgin/Desktop/Projects/GroupApp/GroupApp.Data/obj/Debug/net9.0/GroupApp.Data.pdb
+/Users/s4rgin/Desktop/Projects/GroupApp/GroupApp.Data/obj/Debug/net9.0/GroupApp.Data.genruntimeconfig.cache
+/Users/s4rgin/Desktop/Projects/GroupApp/GroupApp.Data/obj/Debug/net9.0/ref/GroupApp.Data.dll
