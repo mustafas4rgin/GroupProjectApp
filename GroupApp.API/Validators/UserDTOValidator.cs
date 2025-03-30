@@ -7,6 +7,7 @@ public class UserDTOValidator : AbstractValidator<UserDTO>
 {
     public UserDTOValidator()
     {
+        RuleFor(x => x.RoleId).NotEmpty().WithMessage("RoleId can't be null.");
         RuleFor(x => x.FirstName)
             .NotEmpty()
             .WithMessage("First name is required.")

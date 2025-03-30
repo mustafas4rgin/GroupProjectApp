@@ -17,9 +17,9 @@ namespace MyApp.Namespace
             var result = await _roleService.UpdateRoleAsync(dto, id);
             if (!result.Success)
             {
-                return BadRequest(result.Message);
+                return BadRequest(result);
             }
-            return Ok(result.Message);
+            return Ok(result);
         }
         [HttpGet("/api/roles")]
         public async Task<IActionResult> GetRoles()
@@ -27,9 +27,9 @@ namespace MyApp.Namespace
             var result = await _roleService.GetAllRolesAsync();
             if (!result.Success)
             {
-                return NotFound(result.Message);
+                return NotFound(result);
             }
-            return Ok(new { Data = result.Data, Message = result.Message });
+            return Ok(result);
         }
         [HttpPost("/api/create/role")]
         public async Task<IActionResult> CreateRole([FromBody] RoleDTO dto)
@@ -37,9 +37,9 @@ namespace MyApp.Namespace
             var result = await _roleService.CreateRoleAsync(dto);
             if (!result.Success)
             {
-                return BadRequest(result.Message);
+                return BadRequest(result);
             }
-            return Ok(result.Message);
+            return Ok(result);
         }
         [HttpDelete("/api/delete/role/{id}")]
         public async Task<IActionResult> DeleteRole(int id)
@@ -47,9 +47,9 @@ namespace MyApp.Namespace
             var result = await _roleService.DeleteRoleAsync(id);
             if(!result.Success)
             {
-                return BadRequest(result.Message);
+                return BadRequest(result);
             }
-            return Ok(result.Message);
+            return Ok(result);
         }
         [HttpGet("/api/roles/{id}")]
         public async Task<IActionResult> GetRoleById(int id)
@@ -57,9 +57,9 @@ namespace MyApp.Namespace
             var result = await _roleService.GetRoleByIdAsync(id);
             if(!result.Success)
             {
-                return NotFound(result.Message);
+                return NotFound(result);
             }
-            return Ok(new { Data = result.Data, Message = result.Message });
+            return Ok(result);
         }
     }
 

@@ -1,3 +1,4 @@
+using System.Threading.Tasks;
 using GroupApp.API;
 using GroupApp.Data;
 using Microsoft.AspNetCore.Http;
@@ -7,32 +8,58 @@ namespace MyApp.Namespace
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UserController : ControllerBase
+    public class UserController(IUserService userService) : ControllerBase
     {
-        private readonly IDataRepository _dataRepository;
-        public UserController(IDataRepository dataRepository)
+        private IUserService _userService = userService;
+        [HttpGet("/api/users")]
+        public async Task<IActionResult> GetUsers()
         {
-            _dataRepository = dataRepository;
+            var result = await _userService.GetAllUsersAsync();
+
+            if (!result.Success)
+                return NotFound(result);
+
+            return Ok(result);
         }
-        [HttpGet]
-        public IActionResult GetUsers()
+        [HttpPost("/api/create/user")]
+        public async Task<IActionResult> CreateUser([FromBody] UserDTO dto)
         {
-            var users = _dataRepository.GetAll<UserEntity>().ToList();
-            if (users == null || !users.Any())
-            {
-                return NotFound("No users found.");
-            }
-            return Ok(users);
+            var result = await _userService.CreateUserAsync(dto);
+
+            if (!result.Success)
+                return BadRequest(result);
+
+            return Ok(result);
         }
-        [HttpPost]
-        public Task<IActionResult> CreateUser([FromBody] UserEntity user)
+        [HttpPut("/api/update/user{id}")]
+        public async Task<IActionResult> UpdateUser([FromBody] UserDTO dto, int id)
         {
-            if (user == null)
-            {
-                return Task.FromResult<IActionResult>(BadRequest("User cannot be null."));
-            }
-            var createdUser = _dataRepository.AddAsync(user);
-            return Task.FromResult<IActionResult>(CreatedAtAction(nameof(GetUsers), new { id = createdUser.Id }, createdUser));
+            var result = await _userService.UpdateUserAsync(id, dto);
+
+            if (!result.Success)
+                return BadRequest(result);
+
+            return Ok(result);
+        }
+        [HttpDelete("/api/delete/user{id}")]
+        public async Task<IActionResult> Deleteuser(int id)
+        {
+            var result = await _userService.DeleteUserAsync(id);
+
+            if (!result.Success)
+                return NotFound(result);
+
+            return Ok(result);
+        }
+        [HttpGet("/api/users/{id}")]
+        public async Task<IActionResult> GetUserById(int id)
+        {
+            var result = await _userService.GetUserByIdAsync(id);
+
+            if (!result.Success)
+                return NotFound(result);
+
+            return Ok(result);
         }
     }
 }

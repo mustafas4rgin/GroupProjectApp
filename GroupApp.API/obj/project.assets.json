@@ -5328,19 +5328,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/s4rgin/.nuget/packages/": {}
+    "C:\\Users\\MCANS\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/s4rgin/Desktop/Projects/GroupApp/GroupApp.API/GroupApp.API.csproj",
+      "projectUniqueName": "C:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.API\\GroupApp.API.csproj",
       "projectName": "GroupApp.API",
-      "projectPath": "/Users/s4rgin/Desktop/Projects/GroupApp/GroupApp.API/GroupApp.API.csproj",
-      "packagesPath": "/Users/s4rgin/.nuget/packages/",
-      "outputPath": "/Users/s4rgin/Desktop/Projects/GroupApp/GroupApp.API/obj/",
+      "projectPath": "C:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.API\\GroupApp.API.csproj",
+      "packagesPath": "C:\\Users\\MCANS\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/s4rgin/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\MCANS\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -5352,8 +5352,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "/Users/s4rgin/Desktop/Projects/GroupApp/GroupApp.Data/GroupApp.Data.csproj": {
-              "projectPath": "/Users/s4rgin/Desktop/Projects/GroupApp/GroupApp.Data/GroupApp.Data.csproj"
+            "c:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.Data\\GroupApp.Data.csproj": {
+              "projectPath": "c:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.Data\\GroupApp.Data.csproj"
             }
           }
         }
@@ -5420,7 +5420,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
