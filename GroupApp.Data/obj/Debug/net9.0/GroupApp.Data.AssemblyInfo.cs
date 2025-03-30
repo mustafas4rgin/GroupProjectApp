@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GroupApp.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc07cc04a42096a11e841ba9d4e58c6a9e7715e9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+793753eab3c18414949ee81cedc033791e2962d0")]
 [assembly: System.Reflection.AssemblyProductAttribute("GroupApp.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GroupApp.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

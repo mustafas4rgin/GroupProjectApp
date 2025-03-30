@@ -4,7 +4,7 @@ using GroupApp.Data;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace MyApp.Namespace
+namespace GroupApp.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

@@ -5333,11 +5333,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.API\\GroupApp.API.csproj",
+      "projectUniqueName": "c:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.API\\GroupApp.API.csproj",
       "projectName": "GroupApp.API",
-      "projectPath": "C:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.API\\GroupApp.API.csproj",
+      "projectPath": "c:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.API\\GroupApp.API.csproj",
       "packagesPath": "C:\\Users\\MCANS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.API\\obj\\",
+      "outputPath": "c:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\MCANS\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1,9 +1,10 @@
 ﻿using FluentValidation;
+using GroupApp.API.Helpers;
 using GroupApp.API.Results;
 using GroupApp.Data;
 using Microsoft.EntityFrameworkCore;
 
-namespace GroupApp.API;
+namespace GroupApp.API.Services;
 
 public class UserService : IUserService
 {
@@ -92,7 +93,8 @@ public class UserService : IUserService
 
         updatingUser.FirstName = dto.FirstName;
         updatingUser.LastName = dto.LastName;
-        updatingUser.Email = dto.PhoneNumber;
+        updatingUser.Email = dto.Email;
+        updatingUser.PhoneNumber = dto.PhoneNumber is not null ? dto.PhoneNumber : "";
         updatingUser.RoleId = dto.RoleId;
         updatingUser.ProfilePicture = dto.ProfilePicture;
 

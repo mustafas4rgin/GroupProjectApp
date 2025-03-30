@@ -1,7 +1,7 @@
 ﻿using FluentValidation;
 using GroupApp.Data;
 
-namespace GroupApp.API;
+namespace GroupApp.API.Validators;
 
 public class UserDTOValidator : AbstractValidator<UserDTO>
 {

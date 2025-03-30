@@ -1,7 +1,7 @@
 ﻿using GroupApp.API.Helpers;
 using GroupApp.Data;
 
-namespace GroupApp.API;
+namespace GroupApp.API.Helpers;
 
 public class MappingHelper
 {
@@ -27,6 +27,19 @@ public class MappingHelper
             PasswordSalt = passwordSalt,
             PhoneNumber = dto.PhoneNumber,
             RoleId = dto.RoleId
+        };
+    }
+    public static TaskEntity MapToTaskEntity(TaskDTO dto)
+    {
+        return new TaskEntity
+        {
+            AssignedUserId = 1,
+            CreatedByUserId = dto.CreatedByUserId,
+            DueDate = dto.DueDate,
+            Title = dto.Title,
+            Description = dto.Description,
+            IsCompleted = dto.IsCompleted,
+            Notifications = "Default",
         };
     }
 }

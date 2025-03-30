@@ -10,6 +10,7 @@ public class ValidatorAssemblyProvider
         {
             typeof(UserDTOValidator),
             typeof(RoleDTOValidator),
+            typeof(TaskDTOValidator)
         };
     }
 }

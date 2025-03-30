@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using FluentValidation;
+using GroupApp.API.Helpers;
 using GroupApp.API.Results;
 using GroupApp.Data;
 using Microsoft.EntityFrameworkCore;
 
-namespace GroupApp.API;
+namespace GroupApp.API.Services;
 
 public class RoleService : IRoleService
 {
@@ -21,7 +22,11 @@ public class RoleService : IRoleService
         var role = await _dataRepository.GetByIdAsync<RoleEntity>(id);
         if (role == null)
         {
-            return new ServiceResult<RoleEntity>(false, "Role not found", new RoleEntity());
+            return new ServiceResult<RoleEntity>
+            {
+                Success = false,
+                Message = "There is no role."
+            };
         }
         return new ServiceResult<RoleEntity>(true, "Role found", role);
     }
@@ -53,9 +58,9 @@ public class RoleService : IRoleService
             return new ServiceResult(false, "Role not found");
         }
         var validationResult = await _roleValidator.ValidateAsync(dto);
-        if(!validationResult.IsValid)
+        if (!validationResult.IsValid)
         {
-            return new ServiceResult(false,validationResult.Errors.First().ErrorMessage);
+            return new ServiceResult(false, validationResult.Errors.First().ErrorMessage);
         }
         role.Description = dto.Description;
         role.Name = dto.Name;
@@ -66,7 +71,7 @@ public class RoleService : IRoleService
     public async Task<IServiceResult> DeleteRoleAsync(int id)
     {
         var deletingRole = await _dataRepository.GetByIdAsync<RoleEntity>(id);
-        if(deletingRole is null)
+        if (deletingRole is null)
         {
             return new ServiceResult(false, "Role not found");
         }

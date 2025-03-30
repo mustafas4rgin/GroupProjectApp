@@ -1,4 +1,6 @@
-﻿namespace GroupApp.API;
+﻿using GroupApp.API.Services;
+
+namespace GroupApp.API;
 
 public class ServiceRegistrationProvider
 {
@@ -9,6 +11,7 @@ public class ServiceRegistrationProvider
             (typeof(IUserService), typeof(UserService)),
             (typeof(IDataRepository), typeof(DataRepository)),
             (typeof(IRoleService), typeof(RoleService)),
+            (typeof(ITaskService), typeof(TaskService))
         };
 
         foreach (var service in servicesToRegister)
