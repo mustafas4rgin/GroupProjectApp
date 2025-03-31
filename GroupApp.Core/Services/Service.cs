@@ -1,5 +1,6 @@
 using GroupApp.Core.Concrete;
 using GroupApp.Core.Results;
+using Microsoft.EntityFrameworkCore;
 
 public class Service<T> : IService<T> where T : class
 {
@@ -12,7 +13,7 @@ public class Service<T> : IService<T> where T : class
 
     public async Task<IServiceResult<IEnumerable<T>>> GetAllAsync()
     {
-        var entities = await _repository.GetAllAsync();
+        var entities = await _repository.GetAllAsync().ToListAsync();
         if (!entities.Any() || entities is null)
             return new ServiceResult<IEnumerable<T>>
             {

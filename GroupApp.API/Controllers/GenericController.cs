@@ -1,6 +1,7 @@
 using FluentValidation;
 using GroupApp.Core.Concrete;
 using GroupApp.Data;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -17,22 +18,22 @@ namespace MyApp.Namespace
             _validator = validator;
             _service = service;
         }
-
-        [HttpGet]
+        [Authorize(Roles="Admin")]
+        [HttpGet("/api/[controller]s")]
         public async Task<IActionResult> GetAll()
         {
             var result = await _service.GetAllAsync();
             return Ok(result);
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("/api/[controller]s/{id}")]
         public async Task<IActionResult> GetById(int id)
         {
             var result = await _service.GetByIdAsync(id);
             return result != null ? Ok(result) : NotFound();
         }
 
-        [HttpPost]
+        [HttpPost("/api/create/[controller]")]
         public virtual async Task<IActionResult> Add([FromBody] T entity)
         {
             var validationResult = await _validator.ValidateAsync(entity);
@@ -45,14 +46,14 @@ namespace MyApp.Namespace
             return CreatedAtAction(nameof(GetById), new { id = entity }, entity);
         }
 
-        [HttpPut]
+        [HttpPut("/api/update/[controller]")]
         public async Task<IActionResult> Update([FromBody] T entity)
         {
             await _service.UpdateAsync(entity);
             return NoContent();
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("/api/delete/[controller]/{id}")]
         public async Task<IActionResult> Delete(int id)
         {
             await _service.DeleteAsync(id);

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GroupApp.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5ada8f6d918aa70d33698ca78678305af932c504")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+677bca3ac82c745d37c8dec311e92077e37ccd34")]
 [assembly: System.Reflection.AssemblyProductAttribute("GroupApp.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GroupApp.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
