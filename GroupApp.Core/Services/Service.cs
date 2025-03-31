@@ -29,23 +29,71 @@ public class Service<T> : IService<T> where T : class
         };
     }
 
-    public async Task<T> GetByIdAsync(int id)
+    public async Task<IServiceResult<T>> GetByIdAsync(int id)
     {
-        return await _repository.GetByIdAsync(id);
+        var entity = await _repository.GetByIdAsync(id);
+        if (entity is null)
+            return new ServiceResult<T>
+            {
+                Message = "Entity not found.",
+                Data = null,
+                Success = false,
+            };
+        return new ServiceResult<T>
+        {
+            Success = true,
+            Message = "Entity found.",
+            Data = entity,
+        };
     }
 
-    public async Task AddAsync(T entity)
+    public async Task<IServiceResult> AddAsync(T entity)
     {
+        if (entity is null)
+            return new ServiceResult
+            {
+                Message = "Entity cannot be null.",
+                Success = false,
+            };
+        
         await _repository.AddAsync(entity);
+        return new ServiceResult
+        {
+            Message = "Entity added.",
+            Success = true,
+        };
     }
 
-    public async Task UpdateAsync(T entity)
+    public async Task<IServiceResult> UpdateAsync(T entity)
     {
+        if (entity is null)
+            return new ServiceResult
+            {
+                Message = "Entity cannot be null.",
+                Success = false,
+            };
         await _repository.UpdateAsync(entity);
+        return new ServiceResult
+        {
+            Message = "Entity updated.",
+            Success = true,
+        };
     }
 
-    public async Task DeleteAsync(int id)
+    public async Task<IServiceResult> DeleteAsync(int id)
     {
+        var entity = await _repository.GetByIdAsync(id);
+        if (entity is null)
+            return new ServiceResult
+            {
+                Message = "Entity not found.",
+                Success = false,
+            };
         await _repository.DeleteAsync(id);
+        return new ServiceResult
+        {
+            Message = "Entity deleted.",
+            Success = true,
+        };
     }
 }

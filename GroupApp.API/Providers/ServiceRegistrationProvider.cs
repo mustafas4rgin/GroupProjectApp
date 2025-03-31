@@ -1,4 +1,5 @@
 ﻿using GroupApp.Core.Concrete;
+using GroupApp.Core.Services;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 
@@ -11,7 +12,8 @@ public class ServiceRegistrationProvider
         var servicesToRegister = new (Type Interface, Type Implementation)[]
         {
             (typeof(IService<>), typeof(Service<>)),
-            (typeof(IRepository<>), typeof(Repository<>))
+            (typeof(IRepository<>), typeof(Repository<>)),
+            (typeof(IAuthService), typeof(AuthService)),
 
         };
 

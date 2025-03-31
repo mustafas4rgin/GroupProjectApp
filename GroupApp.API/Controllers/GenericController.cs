@@ -33,7 +33,7 @@ namespace MyApp.Namespace
         }
 
         [HttpPost]
-        public async Task<IActionResult> Add([FromBody] T entity)
+        public virtual async Task<IActionResult> Add([FromBody] T entity)
         {
             var validationResult = await _validator.ValidateAsync(entity);
             if (!validationResult.IsValid)
