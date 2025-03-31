@@ -8,9 +8,9 @@ public class ValidatorAssemblyProvider
     {
         return new[]
         {
-            typeof(UserDTOValidator),
-            typeof(RoleDTOValidator),
-            typeof(TaskDTOValidator)
+            typeof(UserValidator),
+            typeof(RoleValidator),
+            typeof(TaskValidator)
         };
     }
 }

@@ -1786,6 +1786,19 @@
           }
         }
       },
+      "GroupApp.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "GroupApp.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/GroupApp.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GroupApp.Core.dll": {}
+        }
+      },
       "GroupApp.Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -5310,6 +5323,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "GroupApp.Core/1.0.0": {
+      "type": "project",
+      "path": "../GroupApp.Core/GroupApp.Core.csproj",
+      "msbuildProject": "../GroupApp.Core/GroupApp.Core.csproj"
+    },
     "GroupApp.Data/1.0.0": {
       "type": "project",
       "path": "../GroupApp.Data/GroupApp.Data.csproj",
@@ -5320,6 +5338,7 @@
     "net9.0": [
       "FluentValidation >= 11.11.0",
       "FluentValidation.AspNetCore >= 11.3.0",
+      "GroupApp.Core >= 1.0.0",
       "GroupApp.Data >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 9.0.1",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.3",
@@ -5333,11 +5352,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.API\\GroupApp.API.csproj",
+      "projectUniqueName": "C:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.API\\GroupApp.API.csproj",
       "projectName": "GroupApp.API",
-      "projectPath": "c:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.API\\GroupApp.API.csproj",
+      "projectPath": "C:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.API\\GroupApp.API.csproj",
       "packagesPath": "C:\\Users\\MCANS\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.API\\obj\\",
+      "outputPath": "C:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\MCANS\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -5352,6 +5371,9 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
+            "C:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.Core\\GroupApp.Core.csproj": {
+              "projectPath": "C:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.Core\\GroupApp.Core.csproj"
+            },
             "c:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.Data\\GroupApp.Data.csproj": {
               "projectPath": "c:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.Data\\GroupApp.Data.csproj"
             }

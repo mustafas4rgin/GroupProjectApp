@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using GroupApp.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace GroupApp.API;
 
@@ -10,6 +11,13 @@ public static class DataServiceRegistration
         {
             options.UseNpgsql(configuration.GetConnectionString("DefaultConnection"));
         });
+
+        using (var scope = services.BuildServiceProvider().CreateScope())
+        {
+            var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+            dbContext.Database.Migrate(); 
+        }
+
         return services;
     }
 }

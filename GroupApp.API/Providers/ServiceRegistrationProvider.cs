@@ -1,17 +1,18 @@
-﻿using GroupApp.API.Services;
+﻿using GroupApp.Core.Concrete;
+using Microsoft.Extensions.DependencyInjection;
+using System;
 
 namespace GroupApp.API;
 
-public class ServiceRegistrationProvider
+public class ServiceRegistrationProvider 
 {
     public static void RegisterServices(IServiceCollection services)
     {
         var servicesToRegister = new (Type Interface, Type Implementation)[]
         {
-            (typeof(IUserService), typeof(UserService)),
-            (typeof(IDataRepository), typeof(DataRepository)),
-            (typeof(IRoleService), typeof(RoleService)),
-            (typeof(ITaskService), typeof(TaskService))
+            (typeof(IService<>), typeof(Service<>)),
+            (typeof(IRepository<>), typeof(Repository<>))
+
         };
 
         foreach (var service in servicesToRegister)

@@ -8,6 +8,7 @@
 
   <ItemGroup>
   <ProjectReference Include="../GroupApp.Data/GroupApp.Data.csproj" />
+  <ProjectReference Include="../GroupApp.Core/GroupApp.Core.csproj" />
   </ItemGroup>
   <ItemGroup>
       
