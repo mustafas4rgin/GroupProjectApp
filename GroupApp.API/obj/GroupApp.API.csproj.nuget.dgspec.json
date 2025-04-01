@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.API\\GroupApp.API.csproj": {}
+    "/Users/s4rgin/Desktop/Projects/GroupProjectApp/GroupApp.API/GroupApp.API.csproj": {}
   },
   "projects": {
-    "c:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.API\\GroupApp.API.csproj": {
+    "/Users/s4rgin/Desktop/Projects/GroupProjectApp/GroupApp.API/GroupApp.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.API\\GroupApp.API.csproj",
+        "projectUniqueName": "/Users/s4rgin/Desktop/Projects/GroupProjectApp/GroupApp.API/GroupApp.API.csproj",
         "projectName": "GroupApp.API",
-        "projectPath": "c:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.API\\GroupApp.API.csproj",
-        "packagesPath": "C:\\Users\\MCANS\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.API\\obj\\",
+        "projectPath": "/Users/s4rgin/Desktop/Projects/GroupProjectApp/GroupApp.API/GroupApp.API.csproj",
+        "packagesPath": "/Users/s4rgin/.nuget/packages/",
+        "outputPath": "/Users/s4rgin/Desktop/Projects/GroupProjectApp/GroupApp.API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\MCANS\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/s4rgin/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -26,11 +26,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "c:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.Core\\GroupApp.Core.csproj": {
-                "projectPath": "c:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.Core\\GroupApp.Core.csproj"
+              "/Users/s4rgin/Desktop/Projects/GroupProjectApp/GroupApp.Core/GroupApp.Core.csproj": {
+                "projectPath": "/Users/s4rgin/Desktop/Projects/GroupProjectApp/GroupApp.Core/GroupApp.Core.csproj"
               },
-              "c:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.Data\\GroupApp.Data.csproj": {
-                "projectPath": "c:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.Data\\GroupApp.Data.csproj"
+              "/Users/s4rgin/Desktop/Projects/GroupProjectApp/GroupApp.Data/GroupApp.Data.csproj": {
+                "projectPath": "/Users/s4rgin/Desktop/Projects/GroupProjectApp/GroupApp.Data/GroupApp.Data.csproj"
               }
             }
           }
@@ -105,21 +105,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "c:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.Core\\GroupApp.Core.csproj": {
+    "/Users/s4rgin/Desktop/Projects/GroupProjectApp/GroupApp.Core/GroupApp.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.Core\\GroupApp.Core.csproj",
+        "projectUniqueName": "/Users/s4rgin/Desktop/Projects/GroupProjectApp/GroupApp.Core/GroupApp.Core.csproj",
         "projectName": "GroupApp.Core",
-        "projectPath": "c:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.Core\\GroupApp.Core.csproj",
-        "packagesPath": "C:\\Users\\MCANS\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.Core\\obj\\",
+        "projectPath": "/Users/s4rgin/Desktop/Projects/GroupProjectApp/GroupApp.Core/GroupApp.Core.csproj",
+        "packagesPath": "/Users/s4rgin/.nuget/packages/",
+        "outputPath": "/Users/s4rgin/Desktop/Projects/GroupProjectApp/GroupApp.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\MCANS\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/s4rgin/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -131,8 +131,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "c:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.Data\\GroupApp.Data.csproj": {
-                "projectPath": "c:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.Data\\GroupApp.Data.csproj"
+              "/Users/s4rgin/Desktop/Projects/GroupProjectApp/GroupApp.Data/GroupApp.Data.csproj": {
+                "projectPath": "/Users/s4rgin/Desktop/Projects/GroupProjectApp/GroupApp.Data/GroupApp.Data.csproj"
               }
             }
           }
@@ -168,21 +168,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "c:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.Data\\GroupApp.Data.csproj": {
+    "/Users/s4rgin/Desktop/Projects/GroupProjectApp/GroupApp.Data/GroupApp.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.Data\\GroupApp.Data.csproj",
+        "projectUniqueName": "/Users/s4rgin/Desktop/Projects/GroupProjectApp/GroupApp.Data/GroupApp.Data.csproj",
         "projectName": "GroupApp.Data",
-        "projectPath": "c:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.Data\\GroupApp.Data.csproj",
-        "packagesPath": "C:\\Users\\MCANS\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.Data\\obj\\",
+        "projectPath": "/Users/s4rgin/Desktop/Projects/GroupProjectApp/GroupApp.Data/GroupApp.Data.csproj",
+        "packagesPath": "/Users/s4rgin/.nuget/packages/",
+        "outputPath": "/Users/s4rgin/Desktop/Projects/GroupProjectApp/GroupApp.Data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\MCANS\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/s4rgin/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -243,7 +243,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
