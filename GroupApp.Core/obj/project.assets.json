@@ -2880,19 +2880,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\MCANS\\.nuget\\packages\\": {}
+    "/Users/s4rgin/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.Core\\GroupApp.Core.csproj",
+      "projectUniqueName": "/Users/s4rgin/Desktop/Projects/GroupProjectApp/GroupApp.Core/GroupApp.Core.csproj",
       "projectName": "GroupApp.Core",
-      "projectPath": "c:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.Core\\GroupApp.Core.csproj",
-      "packagesPath": "C:\\Users\\MCANS\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.Core\\obj\\",
+      "projectPath": "/Users/s4rgin/Desktop/Projects/GroupProjectApp/GroupApp.Core/GroupApp.Core.csproj",
+      "packagesPath": "/Users/s4rgin/.nuget/packages/",
+      "outputPath": "/Users/s4rgin/Desktop/Projects/GroupProjectApp/GroupApp.Core/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\MCANS\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/s4rgin/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -2904,8 +2904,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "c:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.Data\\GroupApp.Data.csproj": {
-              "projectPath": "c:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.Data\\GroupApp.Data.csproj"
+            "/Users/s4rgin/Desktop/Projects/GroupProjectApp/GroupApp.Data/GroupApp.Data.csproj": {
+              "projectPath": "/Users/s4rgin/Desktop/Projects/GroupProjectApp/GroupApp.Data/GroupApp.Data.csproj"
             }
           }
         }
@@ -2941,7 +2941,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

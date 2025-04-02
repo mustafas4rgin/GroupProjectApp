@@ -5261,19 +5261,27 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\MCANS\\.nuget\\packages\\": {}
+    "/Users/s4rgin/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.API\\GroupApp.API.csproj",
       "projectName": "GroupApp.API",
       "projectPath": "C:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.API\\GroupApp.API.csproj",
       "packagesPath": "C:\\Users\\MCANS\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.API\\obj\\",
+=======
+      "projectUniqueName": "/Users/s4rgin/Desktop/Projects/GroupProjectApp/GroupApp.API/GroupApp.API.csproj",
+      "projectName": "GroupApp.API",
+      "projectPath": "/Users/s4rgin/Desktop/Projects/GroupProjectApp/GroupApp.API/GroupApp.API.csproj",
+      "packagesPath": "/Users/s4rgin/.nuget/packages/",
+      "outputPath": "/Users/s4rgin/Desktop/Projects/GroupProjectApp/GroupApp.API/obj/",
+>>>>>>> cb72818b01a262a7906d66526be8e6bcec954b66
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\MCANS\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/s4rgin/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -5285,11 +5293,11 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "c:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.Core\\GroupApp.Core.csproj": {
-              "projectPath": "c:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.Core\\GroupApp.Core.csproj"
+            "/Users/s4rgin/Desktop/Projects/GroupProjectApp/GroupApp.Core/GroupApp.Core.csproj": {
+              "projectPath": "/Users/s4rgin/Desktop/Projects/GroupProjectApp/GroupApp.Core/GroupApp.Core.csproj"
             },
-            "c:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.Data\\GroupApp.Data.csproj": {
-              "projectPath": "c:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.Data\\GroupApp.Data.csproj"
+            "/Users/s4rgin/Desktop/Projects/GroupProjectApp/GroupApp.Data/GroupApp.Data.csproj": {
+              "projectPath": "/Users/s4rgin/Desktop/Projects/GroupProjectApp/GroupApp.Data/GroupApp.Data.csproj"
             }
           }
         }
@@ -5372,7 +5380,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

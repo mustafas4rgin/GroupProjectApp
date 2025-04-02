@@ -351,6 +351,7 @@
 /Users/s4rgin/Desktop/Projects/GroupProjectApp/GroupApp.API/obj/Debug/net9.0/GroupApp.API.pdb
 /Users/s4rgin/Desktop/Projects/GroupProjectApp/GroupApp.API/obj/Debug/net9.0/GroupApp.API.genruntimeconfig.cache
 /Users/s4rgin/Desktop/Projects/GroupProjectApp/GroupApp.API/obj/Debug/net9.0/ref/GroupApp.API.dll
+<<<<<<< HEAD
 C:\Users\MCANS\Desktop\GroupApplication\GroupProjectApp\GroupApp.API\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\MCANS\Desktop\GroupApplication\GroupProjectApp\GroupApp.API\bin\Debug\net9.0\appsettings.json
 C:\Users\MCANS\Desktop\GroupApplication\GroupProjectApp\GroupApp.API\bin\Debug\net9.0\GroupApp.API.staticwebassets.endpoints.json
@@ -533,3 +534,7 @@ C:\Users\MCANS\Desktop\GroupApplication\GroupProjectApp\GroupApp.API\obj\Debug\n
 C:\Users\MCANS\Desktop\GroupApplication\GroupProjectApp\GroupApp.API\obj\Debug\net9.0\GroupApp.API.pdb
 C:\Users\MCANS\Desktop\GroupApplication\GroupProjectApp\GroupApp.API\obj\Debug\net9.0\GroupApp.API.genruntimeconfig.cache
 C:\Users\MCANS\Desktop\GroupApplication\GroupProjectApp\GroupApp.API\obj\Debug\net9.0\ref\GroupApp.API.dll
+=======
+c:/Users/MCANS/Desktop/GroupApplication/GroupProjectApp/GroupApp.API/bin/Debug/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/s4rgin/Desktop/Projects/GroupProjectApp/GroupApp.API/bin/Debug/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+>>>>>>> cb72818b01a262a7906d66526be8e6bcec954b66

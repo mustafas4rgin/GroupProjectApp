@@ -14,6 +14,7 @@
 /Users/s4rgin/Desktop/Projects/GroupProjectApp/GroupApp.Core/obj/Debug/net9.0/refint/GroupApp.Core.dll
 /Users/s4rgin/Desktop/Projects/GroupProjectApp/GroupApp.Core/obj/Debug/net9.0/GroupApp.Core.pdb
 /Users/s4rgin/Desktop/Projects/GroupProjectApp/GroupApp.Core/obj/Debug/net9.0/ref/GroupApp.Core.dll
+<<<<<<< HEAD
 C:\Users\MCANS\Desktop\GroupApplication\GroupProjectApp\GroupApp.Core\obj\Debug\net9.0\GroupApp.Core.csproj.AssemblyReference.cache
 C:\Users\MCANS\Desktop\GroupApplication\GroupProjectApp\GroupApp.Core\obj\Debug\net9.0\GroupApp.Core.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\MCANS\Desktop\GroupApplication\GroupProjectApp\GroupApp.Core\obj\Debug\net9.0\GroupApp.Core.AssemblyInfoInputs.cache
@@ -30,3 +31,5 @@ C:\Users\MCANS\Desktop\GroupApplication\GroupProjectApp\GroupApp.Core\obj\Debug\
 C:\Users\MCANS\Desktop\GroupApplication\GroupProjectApp\GroupApp.Core\obj\Debug\net9.0\refint\GroupApp.Core.dll
 C:\Users\MCANS\Desktop\GroupApplication\GroupProjectApp\GroupApp.Core\obj\Debug\net9.0\GroupApp.Core.pdb
 C:\Users\MCANS\Desktop\GroupApplication\GroupProjectApp\GroupApp.Core\obj\Debug\net9.0\ref\GroupApp.Core.dll
+=======
+>>>>>>> cb72818b01a262a7906d66526be8e6bcec954b66
