@@ -1,4 +1,5 @@
 using System.Text;
+using FluentValidation;
 using GroupApp.API;
 using GroupApp.Core.Concrete;
 using GroupApp.Data;
@@ -7,6 +8,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerUI;
+using AutoMapper;
+using GroupApp.Core.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -42,10 +45,11 @@ builder.Services.AddAuthorization();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+// AutoMapper'ı profillerle birlikte kaydediyoruz
+builder.Services.AddAutoMapper(typeof(MappingProfile)); // Profil tanımları burada aranacak
 
-
-builder.Services.AddBusinessService();
 builder.Services.AddDataServices(builder.Configuration);
+builder.Services.AddBusinessService();
 
 var app = builder.Build();
 

@@ -59,9 +59,6 @@ namespace GroupApp.Data.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("AssignedUserId")
-                        .HasColumnType("integer");
-
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("timestamp with time zone");
 
@@ -90,11 +87,30 @@ namespace GroupApp.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AssignedUserId");
-
                     b.HasIndex("CreatedByUserId");
 
                     b.ToTable("Tasks", (string)null);
+                });
+
+            modelBuilder.Entity("GroupApp.Data.TaskRelEntity", b =>
+                {
+                    b.Property<int>("TaskId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("integer");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<int>("Id")
+                        .HasColumnType("integer");
+
+                    b.HasKey("TaskId", "UserId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("TaskAssignments", (string)null);
                 });
 
             modelBuilder.Entity("GroupApp.Data.UserEntity", b =>
@@ -148,21 +164,32 @@ namespace GroupApp.Data.Migrations
 
             modelBuilder.Entity("GroupApp.Data.TaskEntity", b =>
                 {
-                    b.HasOne("GroupApp.Data.UserEntity", "AssignedUser")
-                        .WithMany()
-                        .HasForeignKey("AssignedUserId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
                     b.HasOne("GroupApp.Data.UserEntity", "CreatedByUser")
                         .WithMany()
                         .HasForeignKey("CreatedByUserId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.Navigation("AssignedUser");
-
                     b.Navigation("CreatedByUser");
+                });
+
+            modelBuilder.Entity("GroupApp.Data.TaskRelEntity", b =>
+                {
+                    b.HasOne("GroupApp.Data.TaskEntity", "Task")
+                        .WithMany("AssignedUsers")
+                        .HasForeignKey("TaskId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("GroupApp.Data.UserEntity", "User")
+                        .WithMany("AssignedTasks")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Task");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("GroupApp.Data.UserEntity", b =>
@@ -174,6 +201,16 @@ namespace GroupApp.Data.Migrations
                         .IsRequired();
 
                     b.Navigation("Role");
+                });
+
+            modelBuilder.Entity("GroupApp.Data.TaskEntity", b =>
+                {
+                    b.Navigation("AssignedUsers");
+                });
+
+            modelBuilder.Entity("GroupApp.Data.UserEntity", b =>
+                {
+                    b.Navigation("AssignedTasks");
                 });
 #pragma warning restore 612, 618
         }

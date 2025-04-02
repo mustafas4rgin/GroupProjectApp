@@ -1,3 +1,4 @@
+using AutoMapper;
 using FluentValidation;
 using GroupApp.Core.Concrete;
 using GroupApp.Data;
@@ -9,16 +10,19 @@ namespace MyApp.Namespace
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class GenericController<T> : ControllerBase where T : class
+    public class GenericController<T, TDto> : ControllerBase where T : class where TDto : class
     {
-        private readonly IValidator<T> _validator;
+        private readonly IValidator<TDto> _validator;
         private readonly IService<T> _service;
-        public GenericController(IService<T> service, IValidator<T> validator)
+        private readonly IMapper _mapper;
+
+        public GenericController(IService<T> service, IValidator<TDto> validator, IMapper mapper)
         {
             _validator = validator;
             _service = service;
+            _mapper = mapper;
         }
-        [Authorize(Roles="Admin")]
+
         [HttpGet("/api/[controller]s")]
         public async Task<IActionResult> GetAll()
         {
@@ -30,25 +34,31 @@ namespace MyApp.Namespace
         public async Task<IActionResult> GetById(int id)
         {
             var result = await _service.GetByIdAsync(id);
-            return result != null ? Ok(result) : NotFound();
+            if (result == null)
+            {
+                return NotFound();
+            }
+            return Ok(result);
         }
 
         [HttpPost("/api/create/[controller]")]
-        public virtual async Task<IActionResult> Add([FromBody] T entity)
+        public virtual async Task<IActionResult> Add([FromBody] TDto dto)
         {
-            var validationResult = await _validator.ValidateAsync(entity);
+            var validationResult = await _validator.ValidateAsync(dto);
             if (!validationResult.IsValid)
             {
                 return BadRequest(validationResult.Errors);
             }
 
+            var entity = _mapper.Map<T>(dto);
             await _service.AddAsync(entity);
-            return CreatedAtAction(nameof(GetById), new { id = entity }, entity);
+            return Ok(entity);
         }
 
         [HttpPut("/api/update/[controller]")]
-        public async Task<IActionResult> Update([FromBody] T entity)
+        public async Task<IActionResult> Update([FromBody] TDto dto)
         {
+            var entity = _mapper.Map<T>(dto);
             await _service.UpdateAsync(entity);
             return NoContent();
         }
@@ -60,5 +70,5 @@ namespace MyApp.Namespace
             return NoContent();
         }
     }
-
 }
+

@@ -3,7 +3,7 @@ using GroupApp.Data;
 
 namespace GroupApp.API.Validators;
 
-    public class TaskValidator : AbstractValidator<TaskEntity>
+    public class TaskValidator : AbstractValidator<TaskDTO>
     {
         public TaskValidator()
         {
@@ -17,9 +17,6 @@ namespace GroupApp.API.Validators;
 
             RuleFor(x => x.DueDate)
                 .GreaterThanOrEqualTo(DateTime.Now).WithMessage("Due date must be in the future.");
-
-            RuleFor(x => x.IsCompleted)
-                .IsInEnum().WithMessage("IsCompleted must be a valid boolean value.");
 
             RuleFor(x => x.CreatedByUserId)
                 .GreaterThan(0).WithMessage("CreatedByUserId must be greater than zero.");

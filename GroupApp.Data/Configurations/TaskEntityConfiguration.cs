@@ -18,11 +18,11 @@ namespace GroupApp.Data;
             builder.Property(t => t.Notifications).IsRequired();
             builder.Property(t => t.IsCompleted).IsRequired();
 
-            builder.HasOne(t => t.AssignedUser)
-                .WithMany()
-                .HasForeignKey(t => t.AssignedUserId)
-                .OnDelete(DeleteBehavior.Restrict);
-
+            builder.HasMany(t => t.AssignedUsers)
+                .WithOne(tr => tr.Task) // Güncellendi: TaskRels -> AssignedUsers
+                .HasForeignKey(tr => tr.TaskId)
+                .OnDelete(DeleteBehavior.Cascade);
+                
             builder.HasOne(t => t.CreatedByUser)
                 .WithMany()
                 .HasForeignKey(t => t.CreatedByUserId)

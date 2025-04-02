@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "UP0GIGpazLw=",
+  "dgSpecHash": "0Iiaj6RHddA=",
   "success": true,
   "projectFilePath": "c:\\Users\\MCANS\\Desktop\\GroupApplication\\GroupProjectApp\\GroupApp.Data\\GroupApp.Data.csproj",
   "expectedPackageFiles": [
@@ -25,8 +25,10 @@
     "C:\\Users\\MCANS\\.nuget\\packages\\microsoft.entityframeworkcore.design\\9.0.3\\microsoft.entityframeworkcore.design.9.0.3.nupkg.sha512",
     "C:\\Users\\MCANS\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\9.0.3\\microsoft.entityframeworkcore.relational.9.0.3.nupkg.sha512",
     "C:\\Users\\MCANS\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\9.0.3\\microsoft.entityframeworkcore.sqlserver.9.0.3.nupkg.sha512",
+    "C:\\Users\\MCANS\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\9.0.3\\microsoft.entityframeworkcore.tools.9.0.3.nupkg.sha512",
     "C:\\Users\\MCANS\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\9.0.3\\microsoft.extensions.caching.abstractions.9.0.3.nupkg.sha512",
     "C:\\Users\\MCANS\\.nuget\\packages\\microsoft.extensions.caching.memory\\9.0.3\\microsoft.extensions.caching.memory.9.0.3.nupkg.sha512",
+    "C:\\Users\\MCANS\\.nuget\\packages\\microsoft.extensions.configuration\\9.0.3\\microsoft.extensions.configuration.9.0.3.nupkg.sha512",
     "C:\\Users\\MCANS\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.3\\microsoft.extensions.configuration.abstractions.9.0.3.nupkg.sha512",
     "C:\\Users\\MCANS\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.3\\microsoft.extensions.dependencyinjection.9.0.3.nupkg.sha512",
     "C:\\Users\\MCANS\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.3\\microsoft.extensions.dependencyinjection.abstractions.9.0.3.nupkg.sha512",

@@ -9,6 +9,7 @@ public class AppDbContext : DbContext
     public DbSet<TaskEntity> Tasks { get; set; }
     public DbSet<UserEntity> Users { get; set; }
     public DbSet<RoleEntity> Roles { get; set; }
+    public DbSet<TaskRelEntity> TaskRels { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

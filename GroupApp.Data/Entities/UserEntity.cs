@@ -11,5 +11,7 @@ public class UserEntity : EntityBase
     public string? PhoneNumber { get; set; }
     public string? ProfilePicture { get; set; }
     public RoleEntity Role { get; set; } = null!;
+    public ICollection<TaskRelEntity> AssignedTasks { get; set; } = new List<TaskRelEntity>();
+
 
 }

@@ -2,6 +2,7 @@
 using GroupApp.Core.Services;
 using Microsoft.Extensions.DependencyInjection;
 using System;
+using static GroupApp.Core.Services.AssignedTaskService;
 
 namespace GroupApp.API;
 
@@ -13,7 +14,9 @@ public class ServiceRegistrationProvider
         {
             (typeof(IService<>), typeof(Service<>)),
             (typeof(IRepository<>), typeof(Repository<>)),
+            (typeof(IUserService), typeof(UserService)),
             (typeof(IAuthService), typeof(AuthService)),
+            (typeof(IAssignedTaskService), typeof(AssignedTaskService)),
 
         };
 

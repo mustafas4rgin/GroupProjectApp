@@ -3,7 +3,7 @@ using GroupApp.Data;
 
 namespace GroupApp.API.Validators;
 
-public class UserValidator : AbstractValidator<UserEntity>
+public class UserValidator : AbstractValidator<UserDTO>
 {
     public UserValidator()
     {

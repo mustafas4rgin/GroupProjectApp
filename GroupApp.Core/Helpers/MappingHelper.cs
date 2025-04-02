@@ -28,17 +28,4 @@ public class MappingHelper
             RoleId = dto.RoleId
         };
     }
-    public static TaskEntity MapToTaskEntity(TaskDTO dto)
-    {
-        return new TaskEntity
-        {
-            AssignedUserId = 1,
-            CreatedByUserId = dto.CreatedByUserId,
-            DueDate = dto.DueDate,
-            Title = dto.Title,
-            Description = dto.Description,
-            IsCompleted = dto.IsCompleted,
-            Notifications = "Default",
-        };
-    }
 }

@@ -1,5 +1,4 @@
 ﻿namespace GroupApp.API.Providers;
-using FluentValidation;
 using GroupApp.API.Validators;
 
 public class ValidatorAssemblyProvider
@@ -10,7 +9,8 @@ public class ValidatorAssemblyProvider
         {
             typeof(UserValidator),
             typeof(RoleValidator),
-            typeof(TaskValidator)
+            typeof(TaskValidator),
+            typeof(AssignedTaskValidator)
         };
     }
 }

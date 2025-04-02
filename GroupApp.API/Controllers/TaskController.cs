@@ -1,3 +1,4 @@
+using AutoMapper;
 using FluentValidation;
 using GroupApp.Core.Concrete;
 using GroupApp.Data;
@@ -8,9 +9,11 @@ namespace MyApp.Namespace
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class TaskController : GenericController<TaskEntity>
+    public class TaskController : GenericController<TaskEntity, TaskDTO>
     {
-        public TaskController(IService<TaskEntity> service, IValidator<TaskEntity> validator) :base(service, validator)
-        {}
+        public TaskController(IService<TaskEntity> service, IValidator<TaskDTO> validator, IMapper mapper)
+            : base(service, validator, mapper)
+        {
+        }
     }
 }
